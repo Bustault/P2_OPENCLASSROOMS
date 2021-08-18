@@ -476,9 +476,31 @@ label{
     }
     .header .header__navigation--accommodation, .header .header__navigation--activities {
         width: 50%;
-        margin: auto 0;
+        margin: 15px 0 0;
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+    .header__navigation--accommodation::before, .header__navigation--activities:hover::before, .header__navigation--inscription:hover::before{
+        content: none;
+    }
+    .header__navigation--accommodation::after{
+        content: "";
+        width: 50%;
+        margin-top: 20px;
+        left: 0px;
+        height: 3px;
+        display: block;
+        position: absolute;
+        background: #0065FC;
+    }
+    .header__navigation--activities::after{
+        content: "";
+        width: 50%;
+        margin-top: 20px;
+        height: 3px;
+        display: block;
+        position: absolute;
+        background: #F2F2F2;
     }
     .search{
         margin-left: 15px;
@@ -486,17 +508,27 @@ label{
     .search__filter{
         flex-wrap: wrap;
     }
+    .search__filter .search__filter--title{
+        width: 100%;
+        justify-content: start;
+    }
+    .search__filter--categories{
+        margin: 0 15px 15px 0;
+    }
     .results__location{
         grid-template-columns: 1fr;
         margin-left: 0;
         margin-right: 0;
+        background: none;
     }
     .results__popular{
+        grid-row: 3;
         margin-left: 0;
         margin-right: 0;
     }
 
     .activities{
+        margin: 0 30px;
         grid-column: 1/-1;
         display: grid;
         grid-column: 1fr;
@@ -518,8 +550,32 @@ label{
     .activities__article5{ grid-area: activities__article5; }
     .activities__article6{ grid-area: activities__article6; }
     
-
+    .activities__article1 img{ 
+        height: 200px;
+        width: 100%;
+    }
+    .activities__article2 img{ 
+        height: 200px;
+        width: 100%;
+    }
+    .activities__article3 img{ 
+        height: 200px;
+        width: 100%;
+    }
+    .activities__article4 img{ 
+        height: 200px;
+        width: 100%;
+    }
+    .activities__article5 img{ 
+        height: 200px;
+        width: 100%;
+    }
+    .activities__article6 img{
+        height: 200px; 
+        width: 100%;
+    }
     .footer{
         display: block;
+        height: auto;
     }
 }
