@@ -495,16 +495,17 @@ label{
         visibility: hidden;
     }
     .search__bar button:after{
-        content: 'loupe';
+        font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f002";
         visibility: visible;
-        color: #FFFF;
-        background-color: #0065FC;
-        border: none;
+        display: flex;
+        background: #0065FC;
+        width: 40px;
         height: 40px;
-        padding: 0 10px;
+        justify-content: center;
+        align-items: center;
         border-radius: 0 10px 10px 0;
-        font-weight: 700;
-        margin: 0;
+        margin-left: -10px;
+        margin-top: -15px;
     }
     .search__filter{
         flex-wrap: wrap;
@@ -550,7 +551,6 @@ label{
         margin: 0 30px;
         grid-column: 1/-1;
         display: grid;
-        grid-column: 1fr;
         grid-template-areas:
         "activities__title" 
         "activities__article1" 
