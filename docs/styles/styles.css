@@ -1,7 +1,9 @@
 /*bleu #0065FC, et sa version plus claire #DEEBFF
 ainsi que le gris pour le fond #F2F2F2.
 La police du site est Raleway.*/
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     position: relative;
     font-family: 'Raleway', sans-serif;
@@ -330,23 +332,27 @@ label{
 .activities a{
     text-decoration: none;
     color: black;
+    width: 100%;
+    height: 100%;
 }
 .activities article{
     transition: all 0.5s;
     box-shadow: 5px 5px 22px -9px rgba(0,0,0,0.3);
     border-radius: 15px;
+    height: 100%;
 }
 .activities article:hover{
     transition: all 0.5s;
     transform: rotate(3deg);
     box-shadow: 5px 5px 22px -9px rgba(0,0,0,0.7);
 }
-.activities p{
-    margin-left: 15px;
+.activities article h3{
+    margin: 10px 0 10px 15px;
     font-weight: 500;
 }
 .activities img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
@@ -379,8 +385,9 @@ label{
     margin-top: 30px;
     border-radius: 15px;
 }
-.footer p{
+.footer h3{
     padding-left: 40px;
+    font-weight: 400;
 }
 .footer ul{
     font-weight: 500;
