@@ -309,7 +309,7 @@ label{
 .activities{
     grid-column: 1/-1;
     display: grid;
-    grid-column: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "activities__title activities__title activities__title activities__title" 
     "activities__article1 activities__article2 activities__article4 activities__article5" 
@@ -554,6 +554,7 @@ label{
         margin: 0 30px;
         grid-column: 1/-1;
         display: grid;
+        grid-template-columns: 1fr;
         grid-template-areas:
         "activities__title" 
         "activities__article1" 
