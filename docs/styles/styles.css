@@ -30,27 +30,25 @@ body{
 .header--logo img{
     text-align: start;
     margin-top: 10px;
-    width: 80px;
+    width: 20%;
     height: auto;
 }
 .header a{
     text-decoration: none;
     color: #0065FC;
-    width: 120px;
+    width: 10%;
     text-align: center;
 }
 .header .header__navigation--activities{
-    margin-left: 15px;
     color: grey;
 }
 .header__navigation--inscription{
-    margin-left: 15px;
     font-weight: 700;
 }
 
 .header__navigation--accommodation::before, .header__navigation--activities:hover::before, .header__navigation--inscription:hover::before{
     content: '';
-    width: 110px;
+    width: 10%;
     height: 2px;
     display: block;
     position: absolute;
@@ -92,12 +90,15 @@ label{
 }
 .search__bar input{
     height: 40px;
-    width: 250px;
+    width: 50%;
     border: solid 1px #F2F2F2;
     border-radius: 0px;
 }
 .search__bar input::placeholder{
     color: black;
+}
+.button_mobile{
+    display: none;
 }
 .search__bar button{
     color: #FFFF;
@@ -278,7 +279,7 @@ label{
     box-shadow: 5px 5px 22px -9px rgba(0,0,0,0.3);
 }
 .results__popular--item img{
-    width: 150px;
+    width: 40%;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
 }
@@ -299,9 +300,10 @@ label{
     width: 100%;
 }
 .results__popular--item h2{
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 0;
     margin: 0;
+    width: 85%
 }
 .results__popular--item p{
     font-size: 0.9em;
@@ -476,6 +478,9 @@ label{
         padding: 0;
         margin: auto 0;
     }
+    .header--logo img{
+        width: 50%;
+    }
     .header .header__navigation--inscription{
         width: 50%;
         padding: 0;
@@ -501,12 +506,11 @@ label{
     .search__title{
         width: 25ch;
     }
-    .search__bar button{
-        visibility: hidden;
+    .button_desktop{
+        display: none;
     }
-    .search__bar button:after{
+    .button_mobile{
         font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f002";
-        visibility: visible;
         display: flex;
         background: #0065FC;
         width: 40px;
@@ -516,6 +520,9 @@ label{
         border-radius: 0 10px 10px 0;
         margin-left: -10px;
         margin-top: -15px;
+    }
+    .button_mobile .fa-search{
+        background-color: #0065FC;
     }
     .search__filter{
         flex-wrap: wrap;
@@ -546,10 +553,6 @@ label{
         margin-left: 0;
         margin-right: 0;
         border-radius: 0;
-    }
-    .results__popular--item h2{
-        font-size: 1.1em;
-        width: 17ch;
     }
     .results__popular--item p{
         font-size: 0.8em;
