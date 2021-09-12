@@ -542,6 +542,9 @@ label{
         margin-right: 0;
         background: none;
     }
+    .results__location--title{
+        height: auto;
+    }
     .results__location--item img{
         width: 100%;
         height: 175px;
