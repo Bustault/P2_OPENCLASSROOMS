@@ -25,6 +25,8 @@ body{
     align-items: flex-end;
 }
 .header .header--logo{
+    width: 40%;
+    text-align: start;
     margin-right: auto;
 }
 .header--logo img{
