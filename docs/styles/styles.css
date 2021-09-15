@@ -17,7 +17,6 @@ body{
     gap: 20px 30px;
 }
 .header{
-    margin-top: 20px;
     grid-column: 1/-1; 
     display: flex;
     justify-items: center;
@@ -33,6 +32,7 @@ body{
     text-align: start;
     margin-top: 10px;
     width: 20%;
+    min-width: 110px;
     height: auto;
 }
 .header a{
@@ -475,6 +475,9 @@ label{
         justify-content: space-between;
         margin-left: 15px;
     }
+    .header a{
+        padding: 0 1%;
+    }
     .header .header--logo{
         order: -2;
         text-align: start;
@@ -492,7 +495,7 @@ label{
         margin: auto 0 auto 0;
     }
     .header .header__navigation--accommodation, .header .header__navigation--activities {
-        width: 50%;
+        width: 48%;
         margin: 15px 0 0;
         padding-top: 20px;
         padding-bottom: 20px;
