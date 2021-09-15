@@ -39,6 +39,8 @@ body{
     text-decoration: none;
     color: #0065FC;
     width: 10%;
+    min-width: 110px;
+    padding: 0 5px;
     text-align: center;
 }
 .header .header__navigation--activities{
